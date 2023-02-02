@@ -14,7 +14,7 @@
             $this->type = $type;
         }
 
-        function setExpirationDate($ExpirationDate){
+        function setExpirationDate($expirationDate){
             $this->expirationDate = $expirationDate;
         }
 
@@ -31,7 +31,7 @@
         }
 
         function computeSRP(){
-           return getPrice() * 2;
+           return $this->getPrice() * 2;
         }
 
         
